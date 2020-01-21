@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace FormWindowManager
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var f2 = WindowManager.Current.CreateForm<Form2>();
-            f2.Show();
+            var f1 = WindowManager.Current.CreateForm<Form1>();
+            f1.Show();
             this.Close();
         }
     }

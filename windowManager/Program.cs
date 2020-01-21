@@ -8,7 +8,7 @@
     Modification History
   
     01/20/2020  Erik W. Smith
-    [30:34]
+    [30]
         Initial Development
         Single line change from the default template for a windows form 
         application.
@@ -27,11 +27,7 @@ namespace FormWindowManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //
-            //
-            Application.Run(new WindowManager());  // Using our window manager
-            //
-            //
+            Application.Run(WindowManager.Current);  // Using our window manager
         }
     }
 }
